@@ -1,0 +1,7 @@
+[Unit]
+Description=Run updateupgrade.sh file
+
+[Service]
+type=
+ExecStart=/etc/systemd/system/scripts/auto_updateupgrade.sh
+TimeoutStopSec=oneshot
