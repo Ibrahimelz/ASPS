@@ -16,19 +16,21 @@
 
 7. Go on the Kali Linux [website](https://www.kali.org/get-kali/#kali-installer-images) and downloaded the recommended Kali ISO file installer.
 
-8. Then follow this [YouTube tutorial](https://www.youtube.com/watch?v=U0AMu3rznc4)
+8. Make sure when creating the virtual machines to have the machines files saved separatly not in one file to be able to modify them later.
 
-9. Then go on [archive.org](https://archive.org/details/WinXPProSP1) website and download windows xp iso file.
+9. Then follow this [YouTube tutorial](https://www.youtube.com/watch?v=U0AMu3rznc4)
 
-10. Install and setup windows xp vmware workstation 17 while watching this [youtube video](https://www.youtube.com/watch?v=ghr5ef-pxXM) and make sure to enter this product key: DF32F-Q323T-JH3HT-QRG42-34YX8.
+10. Then go on [archive.org](https://archive.org/details/WinXPProSP1) website and download windows xp iso file.
 
-11. Setup vm machines settings by visiting this [git repository](https://github.com/Ibrahimelz/ASPS.git).
+11. Install and setup windows xp vmware workstation 17 while watching this [youtube video](https://www.youtube.com/watch?v=ghr5ef-pxXM) and make sure to enter this product key: DF32F-Q323T-JH3HT-QRG42-34YX8.
 
-12. download it and follow the instructions in the scripts/VMware_files to isolate your machines correctly.
+12. Setup vm machines settings by visiting this [git repository](https://github.com/Ibrahimelz/ASPS.git).
 
-13. Then power on both kali linux and windows xp virtual machines.
+13. download it and follow the instructions in the ***scripts/VMware_files*** to isolate your machines correctly.
 
-14. Then open terminal on kali linux and write the following commands:
+14. Then power on both kali linux and windows xp virtual machines.
+
+15. Then open terminal on kali linux and write the following commands:
     - `ifconfig` or `ip address show` to know your own ip address.
 
     - `ping [target machine’s ip]` to check if the other machine is up(checks if the target machine is up and reachable).
@@ -60,3 +62,13 @@
     - `exploit` or `run` Execute the exploit to perform the intended action on the target machine and voila, you have access to the victim’s command shell as a powerful use.
 
     - Then if you want to close everything you need to do `cntrl + c` to get out of the windows xp cmd, then `exit` to get out of the metasploit tool. Then you simply close the terminal, then you can shut down both virtual machines.
+
+## ATTENTION
+***FOR A FINAL SECURITY MEASURE, MOST TIMES WINDOWS DEFENDER WILL PICK KALI.iso IMAGE WITH THE SCRIPTS INSIDE IT AS VIRUSES. YOU WILL TYPICALLY HAVE 365 VIRUSES OR SO. TO MAKE SURE TO EVADE FURTHER COMPICATIONS, DELETE THE iso IMAGE AFTER FININSHING THE VIRTUAL MACHINE'S SET UP***
+The cause for such a thing is that the scripts necessary for the kali tools inside the iso to function are flagged as viruses for security measures and such a thing cannot be disabled.
+However, these "False-positive" viruses might burst out because you tried to fight them in a wrong way and ***THEY MIGHT BECOME REAL VIRUSES*** that could affect your computer and you could affect many other devices if interacted with.
+So please be cautious and treat the situation carefully.
+
+**If you ever forgot to delete the iso file** and one day the windows defender picked these "viruses" up, ***BE CAREFUL TO NOT MESS WITH THEM*** in any way, shape, or form.
+Instead, try to delete the iso file itself, sometimes windows will not allow you to because the "viruses" are active and you cannot delete an active script just like that.
+However, this could be treated easily by going into safe mode. Restart your machine by clicking restart in the windows menu and press `shift` while doing so.
