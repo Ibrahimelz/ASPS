@@ -15,7 +15,7 @@ Such a plan will require us to make automated task scripts that will run all the
 ### Reconnaissance: 
 Nmap
 ### Vulnerability Assessment:
-OpenVAS, SerachSploit(optional, because it is used to find exploits based on the vulnerabilities we’ve identified with OpenVAS).
+Nessus, SearchSploit(optional, because it is used to find exploits based on the vulnerabilities we’ve identified with OpenVAS).
 ### Exploitation: 
 MetaSploit, hydra(needed if there is a password on the target machine).
 ### Post-Exploitation:
