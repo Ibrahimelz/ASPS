@@ -11,7 +11,7 @@ Our project is a research-type project, and we aim to have some sort of tutorial
 Perform penetration tests in a simulated network using virtual machines with windows xp or another vulnerable one for simplicity, in which we set up Vms(victims/targets) on one desktop(host) along side the attacking machines Kali Linux/ and parrotsec Linux. Then, we will crack the target user password.
 Such a plan will require us to make automated task scripts that will run all the virtual machines. Another script will connect automatically the attackers to the victim’s machine. Once on the target device, it collects all necessary information about the machine and its network automatically. Another simple script will be on the laptops to update them every week at 12 and runs the ssh service at boot and closes it automatically at 12 if the laptop is still on for other purposes.
 
-## Tools Used:
+## Tools:
 ### Reconnaissance: 
 Nmap
 ### Vulnerability Assessment:
